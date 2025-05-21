@@ -16,7 +16,7 @@ const Presets = ({ presets = [] }: { presets?: string[] }) => {
 
   const getPresets = () => {
     if (presets?.length > 0) {
-      return presets?.slice(0, 18)
+      return presets
     } else {
       return fakePresets
     }
@@ -76,7 +76,7 @@ const Presets = ({ presets = [] }: { presets?: string[] }) => {
           <div
             key={`${p}-${key}`}
             id={`rbgcp-preset-${key}-wrapper${pickerIdSuffix}`}
-            style={{ width: `calc(100% / 9)`, paddingLeft: 3 }}
+            style={{ width: `calc(100% / 11)`, paddingLeft: 3 }}
           >
             <div
               style={{
